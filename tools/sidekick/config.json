@@ -33,5 +33,5 @@
           "environments": ["preview", "live", "edit"],
           "include_paths": ["**.docx**"]
         }
-    ]
-}
+     ]
+  }
