@@ -1,7 +1,34 @@
 {
     "project": "AEM-experimentation-boilerplate",
     "plugins": [
-      {
+        {
+		    "id": "library",
+		    "title": "Library",
+		    "environments": ["dev", "edit"],
+		    "url": "/tools/sidekick/library.html",
+		    "includePaths": ["**.docx**"]
+	    },
+        {
+	    	"id": "asset-library",
+		    "title": "AEM Assets Library",
+		    "environments": [
+		    "edit"
+		    ],
+		    "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html",
+		    "isPalette": true,
+		    "includePaths": [ "**.docx**" ],
+		    "passConfig": true,
+		    "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
+        },
+        {
+	        "id": "generate-variations",
+		    "title": "Generate Variations",
+		    "url": "https://experience.adobe.com/aem/generate-variations",
+		    "passConfig": true,
+		    "environments": ["preview","live", "edit"],
+		    "includePaths": ["**.docx**"]
+	    },
+		{
         "id": "aem-experimentation",
         "titleI18n": {
           "en": "Experimentation"
@@ -14,33 +41,6 @@
         ],
         "event": "aem-experimentation-sidekick"
       },
-      {
-		    "id": "library",
-		    "title": "Library",
-		    "environments": ["dev", "edit"],
-		    "url": "/tools/sidekick/library.html",
-		    "includePaths": ["**.docx**"]
-	  },
-      {
-	    	"id": "asset-library",
-		    "title": "AEM Assets Library",
-		    "environments": [
-		    "edit"
-		    ],
-		    "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html",
-		    "isPalette": true,
-		    "includePaths": [ "**.docx**" ],
-		    "passConfig": true,
-		    "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
-      },
-      {
-	    	"id": "generate-variations",
-		    "title": "Generate Variations",
-		    "url": "https://experience.adobe.com/aem/generate-variations",
-		    "passConfig": true,
-		    "environments": ["preview","live", "edit"],
-		    "includePaths": ["**.docx**"]
-	  }
     ]
   }
   
