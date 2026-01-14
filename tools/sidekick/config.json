@@ -2,6 +2,13 @@
     "project": "AEM-experimentation-boilerplate",
     "plugins": [
         {
+            "id": "aem-experimentation",
+            "titleI18n": {"en": "Experimentation"},
+            "environments": ["preview", "live", "edit"],
+            "includePaths": ["**.docx**"],
+            "event": "aem-experimentation-sidekick"
+        },
+		{
 		    "id": "library",
 		    "title": "Library",
 		    "environments": ["dev", "edit"],
@@ -11,9 +18,7 @@
         {
 	    	"id": "asset-library",
 		    "title": "AEM Assets Library",
-		    "environments": [
-		    "edit"
-		    ],
+		    "environments": ["edit"],
 		    "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html",
 		    "isPalette": true,
 		    "includePaths": [ "**.docx**" ],
@@ -27,20 +32,7 @@
 		    "passConfig": true,
 		    "environments": ["preview","live", "edit"],
 		    "includePaths": ["**.docx**"]
-	    },
-		{
-        "id": "aem-experimentation",
-        "titleI18n": {
-          "en": "Experimentation"
-        },
-        "environments": [
-          "preview", "live", "edit"
-        ],
-        "includePaths": [
-          "**.docx**"
-        ],
-        "event": "aem-experimentation-sidekick"
-      },
+	    }
     ]
   }
   
