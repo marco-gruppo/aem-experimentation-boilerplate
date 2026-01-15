@@ -1,12 +1,19 @@
   {
     "project": "AEM-experimentation-boilerplate",
     "plugins": [
-	   {
-        "id": "experimentation",
-        "title": "Experimentation",
-        "url": "/tools/sidekick/experimentation.html",
-        "environments": ["preview", "live", "edit"],
-        "includePaths": ["**.docx**"]
+      {
+        "id": "aem-experimentation",
+        "titleI18n": {
+          "en": "Experimentation"
+        },
+        "environments": [
+          "preview", "live", "edit"
+        ],
+        "includePaths": [
+          "**.docx**"
+        ],
+        "event": "aem-experimentation-sidekick"
       }
-   ]
+    ]
   }
+  
