@@ -2,6 +2,13 @@
     "project": "AEM-experimentation-boilerplate",
     "plugins": [
        {
+          "id": "aem-experimentation",
+          "titleI18n": { "en": "Experimentation" },
+          "environments": ["dev", "preview", "live", "prod"],
+          "include_paths": ["**.docx**"],
+          "event": "aem-experimentation-sidekick"
+       },
+       {
           "id": "library",
           "title": "Library",
           "environments": ["edit"],
